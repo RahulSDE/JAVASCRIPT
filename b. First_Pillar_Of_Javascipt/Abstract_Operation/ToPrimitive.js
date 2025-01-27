@@ -6,9 +6,10 @@ console.log();
 
 let obj2 = {
     toString() {
-        // It is a method in javascipt object. It by defualt gives you the output -> [object Object] -> This is a string.
-        // but you can override it, if you want this method to return something else.
-        return "my name is rahul";
+        /* It is a method in javascipt object. It by defualt gives you the output -> "[object Object]" -> This is a string.
+         but you can override it, if you want this method to return something else.For ex. return "my name is rahul";
+        */
+       return "my name is rahul";
     },
     valueOf() {
         // It is a method in javascript object. It by default return you the same object.

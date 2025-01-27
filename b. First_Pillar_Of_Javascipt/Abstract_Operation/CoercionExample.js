@@ -1,3 +1,14 @@
+/*
+    ********************** COERCION ********************
+    > Also called type-casting or typeconversion
+    > Wnenever we do an operation based on the input, we acutally convert the input for operations.
+      We conver type of input.
+      This conversion is done manually --> explicit typecasting.
+      This conversion is done by the language based on certain rules. ---> implicit typecasting.--> coercion.
+*/
+
+
+
 let obj = {x: 10, y: 20};
 let num = 10
 console.log("My age is " + 34);
