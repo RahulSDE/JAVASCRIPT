@@ -6,7 +6,7 @@
            Now if the function is not named, how will i get to know which function is in the call stack.
 */
 
-function fun(fn){
+function fun(fn){  // fn -> askingAboutFun
     console.log("Welcome to fun");
     fn();
 }
@@ -15,3 +15,9 @@ fun(function askingAboutFun(){
     console.log("Too much fun!!!");
     console.trace();
 })
+
+// output
+// Welcome to func
+// Too much fun!!!
+// AskingAboutFun
+// fun

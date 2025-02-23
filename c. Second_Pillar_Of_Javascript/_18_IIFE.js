@@ -13,7 +13,6 @@
     Use case of IIFE
         -> whenever we have naming collision of function, then IIFE is preferrable instead of 
            creating another function with diff name.
-        -> 
 */
 
 function fun(){
@@ -46,3 +45,11 @@ var res = (function evaluate(i) {
 console.log(res);
 
 
+/* ************ Output *******************
+    hi rahul
+    you are using immeditaely invoked function expression
+    rahul
+    2
+
+
+*/
