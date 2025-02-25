@@ -64,6 +64,10 @@ const newArr = [1,2,3,4,5];
 function print(element, idx){
     return `element at index ${idx} is ${element}`;
 }
+
+/*
+    * Here map is looping over every element and passing element, index to the function print.
+*/
 const result2 = newArr.map(print);
 console.log(result2);
 
@@ -106,13 +110,19 @@ console.log(value);
 
 */
 
-let num = [1, 10, 9, 100, 1000, 11, 12, 13, 14, 2, 3];
-console.log(num);
+let num = [1, 10, 9, 100, 1000, 11, 12, 13, 14, 2, 3]; // unsorted array
+console.log(num); 
+/* 
+    * it will sort the array . The expectation was that it will sort the array in increasing order.
+    * The default implementation of arr.sort() sort the array in lexicographical order.
+*/
 num.sort();
 console.log(num);
 
 let num2 = [1, 10, 9, 100, 1000, 11, 12, 13, 14, 2, 3];
 // sort num2 in increasing order.
+
+// The sort function takes the comparator function as an arguement.
 num2.sort(function (a,b){
     // if a < b -> a - b is negative -> if comparator function gives negative then a will be placed before b.
     // if a > b -> a - b is positive -> if comparator function gives positive then a will be placed after b.

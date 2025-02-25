@@ -1,6 +1,6 @@
 /*
     ****************** Higher Order Function ********************
-    -> There are functions which take another function as an argument or return another function, then these functions are called
+    -> These are functions which take another function as an argument or return another function, then these functions are called
        Higher Order Functions.
 */
 
