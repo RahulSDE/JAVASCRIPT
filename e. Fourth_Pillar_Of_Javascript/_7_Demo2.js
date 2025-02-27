@@ -38,3 +38,27 @@ timeConsumingByRuntimeFeature1();
 timeConsumingByRuntimeFeature2();
 timeConsumingByLoop();
 console.log("by");
+
+
+/*
+    ****************** Output
+    Hi
+    loop starts
+    loop ends
+    Timer0 starts
+    Timer1 starts
+    Timer2 starts
+    Timer3 starts
+    loop starts
+    loop ends
+    by
+    completed the timer1!!!
+    completed the timer2
+    completed the timer0 
+*/
+/*
+    Event Queue
+    exec Of Runtime Feature 1
+    exec of Rumtime feature 2
+    exc of Runtime feature 3
+*/

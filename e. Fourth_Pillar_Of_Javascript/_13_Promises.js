@@ -19,7 +19,7 @@
 
 
 /*
-    **************** Detailed Info About Promises *************
+    **************** Detailed Information About Promises *************
     * In order to understand promises very well, we need to understand two things
       1) How we can create a promise.
       2) How we can consume a promise.
@@ -41,7 +41,7 @@
                pending to fulfilled.
 
         3) Rejected
-            -> When the operation is nto successfully completed, then the state property of promise object will migrate from 
+            -> When the operation is not successfully completed, then the state property of promise object will migrate from 
                pending to rejected.
 
     * Syntax of a promise object.
@@ -58,7 +58,7 @@
       })
     * Here the callback function has two parameters "resolve" and "reject".
     * "resolve" and "rejects" are functions only.
-    * Whenever in the implementation of executor callback 
+    * Whenever in the implementation of executor/ callback 
         -- you call the "resolve" function, the "promise" goes to a "fullfilled" state.
         -- if you call a "reject" function, it will goes to a "rejected" state.
         -- if you call nothing, then "promise" remains in "pending" state.

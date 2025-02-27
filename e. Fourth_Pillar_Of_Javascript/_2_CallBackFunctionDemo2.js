@@ -6,6 +6,6 @@
     
 */
 
-setTimeout(function exec(){
+setTimeout(function exec(){ // here exec() is the callback function.
     console.log("running after sometime");
 }, 4000);

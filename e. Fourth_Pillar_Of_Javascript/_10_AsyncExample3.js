@@ -10,3 +10,15 @@ for(let i = 0; i < 10000000000; i++){
     // some logic
 }
 console.log("end");
+/*
+    Start
+    End
+    timer
+    timer
+    timer
+*/
+/*
+    exec()
+    exec()
+    exec()
+*/

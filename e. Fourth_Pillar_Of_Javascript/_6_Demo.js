@@ -18,3 +18,15 @@ timeConsumingByLoop();
 timeConsumingByRuntimeFeature();
 timeConsumingByLoop();
 console.log("by");
+
+/*
+    ************** Output **************
+    Hi
+    loop starts
+    loop ends
+    Timer starts
+    loop starts
+    loop ends
+    By
+    completed the timer!!!
+*/
