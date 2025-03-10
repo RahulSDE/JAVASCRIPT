@@ -1,12 +1,26 @@
 console.log("Hi");
-/*
-    -> Javascript is synchronous in nature for the core javascript code.
-       (the logic that is mentioned in the ecmascript documentation.)
-    -> Here setTimeout() is not a part of ecmascript documentation.
-    -> setTimeout() is provided to javascript by runtime.
-    -> Hence, it is the runtime which decides whether setTimeout() will be synchronous or async.
-    
+/*  
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━👑━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓  
+  🔥 **JavaScript & Its Synchronous Nature** 🔥  
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⚡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛  
+
+  🟢 **JavaScript Core is Synchronous**  
+  ───────────────────────────────────  
+  ✅ JavaScript executes **synchronously** by default for its **core logic**  
+     (as defined in the **ECMAScript documentation** 📜).  
+
+  ⚠️ **What About `setTimeout()`?**  
+  ───────────────────────────────────  
+  🔹 `setTimeout()` is **NOT** part of the ECMAScript specification.  
+  🔹 It is provided by the **runtime environment** (e.g., Browser, Node.js).  
+  🔹 The **runtime** decides whether `setTimeout()` executes **synchronously** or **asynchronously**.  
+
+  🚀 **Key Takeaway:**  
+  JavaScript’s **async behavior** comes from the runtime, NOT the language itself!  
+  Understanding this is essential for mastering the **event loop** & async programming! ⚡  
 */
+
+
 setTimeout(function fun(){
     console.log("timeout");
 }, 5000);

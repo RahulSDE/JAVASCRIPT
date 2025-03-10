@@ -1,23 +1,39 @@
-/*
- ********************** Problems with callback function *****************
- -> 1) Inversion of controls
-    2) Callback hell
-*/
+/**
+ * ⚠️ Problems with Callback Functions ⚠️
+ * --------------------------------------------
+ * While callbacks are useful, they come with certain challenges:
+ * 1️⃣ **Inversion of Control** – Loss of control over execution.
+ * 2️⃣ **Callback Hell** – Nested callbacks leading to unreadable code.
+ * 
+ * 🌀 Callback Hell 🌀
+ * --------------------------------------------
+ * ✅ Callback hell occurs when multiple asynchronous functions are nested inside one another, making code hard to read and maintain.
+ * ✅ This leads to deeply indented and difficult-to-debug code.
+ * 🔗 Refer to: [callbackhell.com](http://callbackhell.com) for a detailed explanation.
+ * 
+ * 🏗️ Example of Callback Hell:
+ * --------------------------------------------
+ * asyncTask1(function(result1) {
+ *     asyncTask2(result1, function(result2) {
+ *         asyncTask3(result2, function(result3) {
+ *             console.log("Final Result:", result3);
+ *         });
+ *     });
+ * });
+ * 
+ * 😵 This deep nesting makes the code **hard to read and maintain**.
+ * 
+ * 🔄 Inversion of Control 🔄
+ * --------------------------------------------
+ * ✅ When passing a callback function to a higher-order function, we **lose control** over how and when it is executed.
+ * ✅ The **higher-order function** decides **when, how, and how many times** the callback will be invoked.
+ * ✅ This can lead to unexpected behavior or bugs if we don't fully understand the implementation.
+ * 
+ * 🎯 Solution:
+ * --------------------------------------------
+ * ✅ Use **Promises** or **Async/Await** to write cleaner and more maintainable asynchronous code.
+ */
 
-/*
-********** Callback hell *********
-    -> website to refer: callbackhell.com
-    -> Readibility problem.
-*/
-
-/*
-    *********** INVERSION OF CONTROL ***************
-    -> The inversion of control says that the function which we are passing as the callback function to
-       the higher order function. Actually we don't know what is the actual logic of higher order function,
-       i.e. how will higher order function execute the callback function.
-    -> Actually we are giving control to somebody else to execute the call-back function in the way they want.
-    -> This problem is called inversion of control problem.
-*/
 
 function doTask(fn, x){
     // whole implementation is done by team A

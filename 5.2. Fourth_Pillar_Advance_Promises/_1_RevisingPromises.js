@@ -1,25 +1,33 @@
-/*
-    * Promises are javascript object.
-    * Promises -> Javascript object -> 2 properties(value and state).
-    * value -> default is undefined.
-    * state -> default is pending.
-    * new Promise(function exec(resolve, reject)){
-        // Any logic be it synchronous or asynchronous can be written.
-        // if resolve(argument) is called
-              -> state -> fullfilled. (i.e. state will go to fulfilled from pending).
-              -> value -> argument    (i.e. value will be assigned the argument that is passed to the resolve() function).
-        // if reject(argument) is called.
-              -> state -> rejected. (i.e. state will go to rejected from pending).
-              -> value -> argument    (i.e. value will be assigned the argument that is passed to the resolve() function).
-      }
-        -> Promise constructor takes executor callback exec() as an argument.
-        -> This exec() function takes two functions resolve() and reject() as an argument.
-*/
 
-/*
-    * At the time when the constructor generates a new Promise object, it also generates a pair of functions 
-      called as "resolve" and "reject".
-    * Generally the executor callback wraps some asynchronous / synchronous operations.
-    * The executor is called synchronously.
-    * 
-*/
+/**
+ * 🌟 Promises in JavaScript 🌟
+ * --------------------------------------------
+ * ✅ A Promise is a JavaScript object that represents the eventual completion (or failure) of an asynchronous operation.
+ * ✅ A Promise has two fundamental properties:
+ *      - `value`  -> Initially `undefined`, later holds the resolved/rejected value.
+ *      - `state`  -> Initially `"pending"`, changes to either `"fulfilled"` or `"rejected"`.
+ * 
+ * 🛠️ Creating a Promise:
+ * ------------------------------
+ * new Promise(function exec(resolve, reject) {
+ *     // The `exec` function is called the "executor function".
+ *     // It can contain any logic (synchronous or asynchronous).
+ * 
+ *     // If resolve(argument) is called:
+ *     //    - `state` becomes "fulfilled".
+ *     //    - `value` is assigned the argument passed to `resolve()`.
+ * 
+ *     // If reject(argument) is called:
+ *     //    - `state` becomes "rejected".
+ *     //    - `value` is assigned the argument passed to `reject()`.
+ * });
+ * 
+ * 🎯 Key Points:
+ * ------------------------------
+ * ✅ The Promise constructor accepts an executor function as an argument.
+ * ✅ The executor function receives two functions: `resolve()` and `reject()`.
+ * ✅ When a new Promise object is created, JavaScript automatically generates the `resolve` and `reject` functions.
+ * ✅ The executor function runs **synchronously** when the Promise is created.
+ * ✅ Generally the executor callback wraps some asynchronous / synchronous operations.
+ * 
+ */
