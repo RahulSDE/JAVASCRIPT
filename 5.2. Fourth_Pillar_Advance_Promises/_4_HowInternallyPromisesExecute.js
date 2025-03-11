@@ -11,6 +11,10 @@
         onFulfillment: [],  // Stores .then() fulfillment handlers
         onRejection: []     // Stores .catch() rejection handlers
     }
+    
+    🔹 When the promise is resolve or rejected, the functions/handler present if "onfullfillment" or "onrejectin" array
+       is not immediately executed.
+
 
     ✅ onFulfillment[] (Array of Fulfillment Handlers)
     --------------------------------------------------
