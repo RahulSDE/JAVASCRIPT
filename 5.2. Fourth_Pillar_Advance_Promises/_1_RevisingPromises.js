@@ -24,6 +24,8 @@
  * 
  * 🎯 Key Points:
  * ------------------------------
+ * ✅ At the time when the constructor generates a new promise object, it also generate a pair of function called as 
+ *     "resolve" and "reject".
  * ✅ The Promise constructor accepts an executor function as an argument.
  * ✅ The executor function receives two functions: `resolve()` and `reject()`.
  * ✅ When a new Promise object is created, JavaScript automatically generates the `resolve` and `reject` functions.

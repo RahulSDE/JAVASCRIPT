@@ -4,8 +4,8 @@
     * They can solve the problem of "Inversion of Control".
     * In javascript, Promises are special type of objects that get returned immediately when we call them.
     *  Promise object has following properties:
-        1) state property.
-        2) value property.
+        1) state property -> Default value: Pending
+        2) value property -> Default value: undefined
     * Promises also act as a placeholder for the data that we may get back sometime in future.
       For example : 
             x = fetch("http://www.xyz.com");
